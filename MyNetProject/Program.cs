@@ -8,8 +8,9 @@ namespace MyNetProject
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!-  this is now partly modified");
 
+            Console.WriteLine("Hello World!-  this is now partly modified");
+            string line;
             FileStream aFile = new FileStream("C:/Csharp/Alina/Alina.Jon/SalesRecords.csv", FileMode.Open);
             StreamReader sr = new StreamReader(aFile);
             
