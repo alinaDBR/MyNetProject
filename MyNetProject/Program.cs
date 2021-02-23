@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using AlinaJon;
 
 
 namespace MyNetProject
@@ -8,20 +9,10 @@ namespace MyNetProject
     {
         static void Main(string[] args)
         {
-
-            Console.WriteLine("Hello World!-  this is now partly modified");
-            string line;
-            FileStream aFile = new FileStream("C:/Csharp/Alina/Alina.Jon/SalesRecords.csv", FileMode.Open);
-            StreamReader sr = new StreamReader(aFile);
-            
-            // read data in line by line
-            while ((line = sr.ReadLine()) != null)
-            {
-                Console.WriteLine(line);
-                line = sr.ReadLine();
-            }
-            sr.Close();
+            CheckFileName.CheckFile();
         }
+
+       
     }
 
 
