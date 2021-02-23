@@ -9,18 +9,6 @@ namespace AlinaJon
     public class SaleRecord
     {
 
-        enum Priority
-        {
-            [Display(Name = "critical")]
-            C,
-            [Display(Name = "high")]
-            H,
-            [Display(Name = "medium")]
-            M,
-            [Display(Name = "low")]
-            L
-        }
-
         enum Channel
         {
             Offline,
